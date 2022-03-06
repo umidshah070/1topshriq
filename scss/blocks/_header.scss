@@ -1,0 +1,100 @@
+.site-header{
+  padding: 10px 0;
+}
+
+.site-header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.logo__img{
+  width: 106px;
+  height: 43px;
+}
+
+.site-header__nav{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.site-header__list{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.list__item-link{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #FFFFFF;
+  opacity: 0.3;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.nav__block{
+  width: 99px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  opacity: 0.6;
+  border: 1px solid #FFFFFF;
+  border-radius: 75px;
+
+}
+
+.nav__block-link{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #FFFFFF;
+  opacity: 0.3;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+
+.site-header__hamburg-menu{
+  width: 24px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  display: none;
+}
+
+
+@media only screen and (max-width: 426px){
+
+  .site-header{
+    padding: 6px 0;
+  }
+  .logo__img{
+    width: 71px;
+    height: 29px;
+  }
+
+  .site-header__nav{
+    display: none;
+
+  }
+
+  .site-header__hamburg-menu{
+    display: block;
+  }
+
+}
