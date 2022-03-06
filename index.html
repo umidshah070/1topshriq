@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.min.css">
   <title>Template Repo</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
 
         </a>
 
-        <nav class="site-header__nav">
+        <nav class="site-header__nav nav">
 
           <ul class="site-header__list list">
 
@@ -48,6 +48,10 @@
 
       </div>
 
+      <div class="site-header__liner">
+        <img class="site-header__liner-img" src="./images/Line1.svg" alt="liner">
+      </div>
+
 
     </div>
 
@@ -58,6 +62,8 @@
     <section class="site-form">
 
       <div class="container">
+
+
 
         <div class="site-form__inner">
 
@@ -116,18 +122,36 @@
 
             <div class="form__content">
 
-              <label class="form__content-label" for="name">Ism Familiya</label>
+              <label class="form__content-label" for="Corparative">Sayni turini tanlang</label>
 
-              <input class="form__content-input form__content-input--name" type="text" id="name" name="Name" placeholder="Ismingini kiriting" required>
+              <select class="form__content-select form__content-select--corpa " name="Corparative" id="Corparative">
+
+                <option selected disabled>Corparative sayt</option>
+                <option value="Corparative">kun.uz</option>
+                <option value="Corparative">daryo.uz</option>
+                <option value="Corparative">olcha.uz</option>
+
+              </select>
+
+
 
 
             </div>
 
             <div class="form__content">
 
-              <label  class="form__content-label"  for="name">Companiyani kiriting</label>
+              <label class="form__content-label" for="Messenger">Sizga bo’glanish usulini tanlang</label>
 
-              <input class="form__content-input form__content-input--conpaniya" type="text" id="name" name="Name" placeholder="Companiya" required>
+              <select class="form__content-select form__content-select--mess " name="Messenger" id="Messenger">
+
+                <option selected disabled>Telegram</option>
+                <option value="Telegram">Telegram</option>
+                <option value="Telegram">Telegram</option>
+                <option value="Telegram">Telegram</option>
+
+              </select>
+
+
 
 
             </div>
@@ -135,10 +159,36 @@
 
            </div>
 
+           <div class="form__textarea">
+
+            <label class="form__textarea-label" for="Message">Message</label>
+
+            <textarea class="form__textarea-textarea" name="Message" id="Message" >
+
+
+            </textarea>
+
+
+           </div>
+
+           <button class="form__button" type="submit">
+            Jo’natish
+           </button>
+
 
 
 
           </form>
+
+          <div class="site-form__content">
+
+            <h2 class="site-form__title">Ux & Ui design</h2>
+
+            <p class="site-form__text">
+              In the current tech scenario, one can’t predict what device their user will use to interact with a product. This is why it’s always a good idea to build something that supports all devices. However it is nearly impossible to design for every screen size with so many .
+            </p>
+
+          </div>
 
 
         </div>
@@ -152,5 +202,6 @@
   </main>
 
 
+  <script src="./js/main.js"></script>
 </body>
 </html>

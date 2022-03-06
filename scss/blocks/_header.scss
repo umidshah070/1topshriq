@@ -1,12 +1,12 @@
 .site-header{
-  padding: 10px 0;
+ position: relative;
+ padding-top: 65px;
 }
 
 .site-header__inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid white;
 }
 
 .logo__img{
@@ -19,6 +19,8 @@
   align-items: center;
   gap: 50px;
 }
+
+
 
 .site-header__list{
   display: flex;
@@ -64,6 +66,18 @@
   }
 }
 
+// .site-header__nav--active{
+//   width: 100%;
+//   position: absolute;
+//   top: 71px;
+//   z-index: 2;
+//   display: none;
+//   flex-direction: column-reverse;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+
+// }
+
 
 .site-header__hamburg-menu{
   width: 24px;
@@ -77,11 +91,17 @@
   display: none;
 }
 
+.site-header__liner{
+  position: absolute;
+  top: 200px;
+  width: 1208px;
+}
+
 
 @media only screen and (max-width: 426px){
 
   .site-header{
-    padding: 6px 0;
+    padding: 25px 0 30px 0;
   }
   .logo__img{
     width: 71px;
@@ -93,8 +113,16 @@
 
   }
 
+
+
   .site-header__hamburg-menu{
     display: block;
   }
+
+  .site-header__liner{
+    display: none;
+  }
+
+
 
 }
